@@ -148,7 +148,10 @@ The Data Collection Mode allows the user to collect more data for the model to b
 To turn Data Collection Mode on, press the *k* key.
 To return back to the default mode, press *n*<br>
 
-By pressing keys 0 through 9, hand keypoints are saved in
+By pressing keys 0 through 9, hand keypoints are saved in [keypoint.csv](keypoint.csv) with their number that was pressed.
+You can retrain the model in [keypoint_classification.ipynb](keypoint_classification.ipynb) or [keypoint_classification_EN.ipynb](keypoint_classification_EN.ipynb) using these numbers as different gestures.
+<br>
+You may rename the gestures in (keypoint_classifier_label.csv)[keypoint_classifier_label.csv]
 
 ---
 

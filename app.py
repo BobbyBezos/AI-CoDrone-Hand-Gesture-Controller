@@ -71,7 +71,7 @@ def get_args():
     parser.add_argument("--model_path",
                         help='MediaPipe hand landmarker .task model path',
                         type=str,
-                        default='model/hand_landmarker.task')
+                        default='hand_landmarker.task')
 
     args = parser.parse_args()
 
@@ -107,7 +107,7 @@ def main():
         raise FileNotFoundError(
             f'Hand landmarker model not found: {model_path}\n'
             'Download hand_landmarker.task from the MediaPipe Hand Landmarker '
-            'model page and place it at model/hand_landmarker.task, or pass '
+            'model page and place it at hand_landmarker.task, or pass '
             '--model_path with its location.'
         )
 

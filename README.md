@@ -156,6 +156,7 @@ You may rename the gestures in [keypoint_classifier_label.csv](keypoint_classifi
 ---
 ## Safety Note
 Make sure the drone has enough space before running control mode. Test gestures without a drone first using Drone Mode.
+
 ---
 
 ## Known Issues and Limitations

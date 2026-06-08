@@ -74,7 +74,7 @@ pip install mediapipe
 pip install opencv-python
 pip install tensorflow
 pip install numpy
-pip install codrone
+pip install codrone_edu
 ```
 
 ---
@@ -131,28 +131,31 @@ Drone will attempt to flip, only works when drone battery is >50%
 ## Modes
 
 ### Drone Mode
-Drone mode is used so that when off, the program can run the hand gesture recognition without having a drone connected, which would otherwise result in errors.
+Drone mode is used so that when off, the program can run the hand gesture recognition without having a drone connected, which would otherwise result in errors.<br>
 Drone mode is set to False when program is run.
 Press *Enter* to to toggle it.
 
 ### Control Mode
 Control mode is used to toggle whether hand gestures control the drone when it is connected.<br>
-Control mode is set to False when the program is run.
+Control mode is set to False when the program is run.<br>
 Press *Space* to toggle it.<br>
 Control mode's polarity can be seen by the coloured outline around the screen.
 - Red indicates that it is off
 - Green indicates that it is on
 
 ### Data Collection Mode
-The Data Collection Mode allows the user to collect more data for the model to be further trained.
-To turn Data Collection Mode on, press the *k* key.
+The Data Collection Mode allows the user to collect more data for the model to be further trained.<br>
+To turn Data Collection Mode on, press the *k* key.<br>
 To return back to the default mode, press *n*<br>
 
-By pressing keys 0 through 9, hand keypoints are saved in [keypoint.csv](keypoint.csv) with their number that was pressed.
+By pressing keys 0 through 9, hand keypoints are saved in [keypoint.csv](keypoint.csv) with their number that was pressed.<br>
 You can retrain the model in [keypoint_classification.ipynb](keypoint_classification.ipynb) or [keypoint_classification_EN.ipynb](keypoint_classification_EN.ipynb) using these numbers as different gestures.
 <br>
-You may rename the gestures in (keypoint_classifier_label.csv)[keypoint_classifier_label.csv]
+You may rename the gestures in [keypoint_classifier_label.csv](keypoint_classifier_label.csv)
 
+---
+## Safety Note
+Make sure the drone has enough space before running control mode. Test gestures without a drone first using Drone Mode.
 ---
 
 ## Known Issues and Limitations
